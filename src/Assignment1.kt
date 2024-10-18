@@ -9,8 +9,8 @@ class Customer{
     val card: PrestoCard = PrestoCard()
 
     constructor(n: String, iStu: Boolean = false) {
-        this.name = n
-        this.isStudent = iStu
+        name = n
+        isStudent = iStu
         if(isStudent){
             card.balance = 20.0
         }
