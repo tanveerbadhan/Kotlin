@@ -3,10 +3,14 @@ class PrestoCard {
     var monthlyPass: Boolean = false
 }
 
-class Customer(var name: String, var isStudent: Boolean = false) {
+class Customer{
+    var name: String = ""
+    var isStudent: Boolean = false
     val card: PrestoCard = PrestoCard()
 
-    init {
+    constructor(n: String, iStu: Boolean = false) {
+        this.name = n
+        this.isStudent = iStu
         if(isStudent){
             card.balance = 20.0
         }
