@@ -63,6 +63,7 @@ class Customer{
 
 fun main() {
     val ram = Customer("Ram Singh")
+    ram.rideBus()
     ram.addMoney(5.0)
     ram.rideBus()
 
